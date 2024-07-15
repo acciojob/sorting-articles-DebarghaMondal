@@ -9,14 +9,14 @@
       font-family: Arial, sans-serif;
       margin: 20px;
     }
-	  #band{
+	  #bands{
 		  background-color:gray;
 	  }
   </style>
 </head>
 <body>
   <h2>Sorted Bands</h2>
-  <ul id="band">
+  <ul id="bands">
     <!-- Bands will be dynamically inserted here -->
   </ul>
 
@@ -43,10 +43,10 @@
     });
 
     // Display sorted bands in the HTML
-    const bandList = document.getElementById('band');
-    sortedBands.forEach(band => {
+    const bandList = document.getElementById('bands');
+    sortedBands.forEach(bands => {
       const li = document.createElement('li');
-      li.textContent = band;
+      li.textContent = bands;
       bandList.appendChild(li);
     });
   </script>
